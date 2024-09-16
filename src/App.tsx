@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import Profile from "./components/Profile";
+import LinkButton from "./components/LinkButton";
+import links from "./data/links";
+import { LinkPreview } from "./components/ui/link-preview";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App: React.FC = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="min-h-screen py-6 flex flex-col justify-center  sm:py-12">
+      <div className="relative py-3 sm:max-w-xl sm:mx-auto">
+        <div className="absolute inset-0  shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+        <div className="relative px-4 py-10shadow-lg sm:rounded-3xl sm:p-20 justify-items-center">
+          <Profile />
+          <div className="mt-5 space-y-4">
+            {links.map((link, index) => (
+              <LinkButton key={index} href={link.url} text={link.text} />
+            ))}
+          </div>
 
-export default App
+          <div>
+            <LinkPreview url="https://leoyassuda.com">
+              Hover me to see preview
+            </LinkPreview>
+            <LinkPreview url="https://leoyassuda.com">
+              <LinkButton href="https://leoyassuda.com" text="portifolio" />
+            </LinkPreview>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default App;
