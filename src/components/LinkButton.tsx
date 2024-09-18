@@ -7,14 +7,16 @@ interface LinkButtonProps {
 
 const LinkButton: React.FC<LinkButtonProps> = ({ href, text }) => {
   return (
-    <a
-      href={href}
-      className="block w-full px-4 py-2 text-center text-white bg-blue-500 rounded-2xl hover:bg-blue-600 transition duration-300"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {text}
-    </a>
+    <div className="block w-full  py-2">
+      <button className="p-[3px] relative w-full">
+        <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-3xl" />
+        <div className="px-8 py-2  bg-black rounded-3xl relative group transition duration-200 text-white hover:bg-transparent">
+          <a href={href} target="_blank" rel="noopener noreferrer">
+            {text}
+          </a>
+        </div>
+      </button>
+    </div>
   );
 };
 
