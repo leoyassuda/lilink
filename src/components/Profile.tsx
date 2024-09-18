@@ -7,7 +7,7 @@ const Profile: React.FC = () => {
         <AvatarImage
           height={96}
           width={96}
-          src="https://github.com/shadcn.png"
+          src="/tomioka-gyuu-avatar.jpg"
           alt="@leo_yassuda"
         />
         <AvatarFallback>LEO</AvatarFallback>
