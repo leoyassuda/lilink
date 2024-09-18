@@ -1,15 +1,14 @@
-import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const Profile: React.FC = () => {
   return (
-    <div className="text-center grid py-2 justify-center justify-items-center">
-      <Avatar className="grid align-middle justify-center justify-items-center">
+    <div className="text-center flex flex-col items-center py-2 justify-center justify-items-center ">
+      <Avatar className="h-24 w-24">
         <AvatarImage
           height={96}
           width={96}
           src="https://github.com/shadcn.png"
-          alt="@shadcn"
+          alt="@leo_yassuda"
         />
         <AvatarFallback>LEO</AvatarFallback>
       </Avatar>
