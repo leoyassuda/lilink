@@ -1,69 +1,40 @@
 import React from "react";
 import {
-  IconBrandGithub,
   IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
+  IconBrandInstagram,
+  IconBrandThreads,
+  IconBrandTiktok,
 } from "@tabler/icons-react";
 
 const navLinks: { title: string; icon: React.ReactNode; href: string }[] = [
   {
-    title: "Home",
+    title: "Instagram",
     icon: (
-      <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "hhtps://www.instagram/leo_yassuda",
   },
 
   {
-    title: "Products",
+    title: "Threads",
     icon: (
-      <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      <IconBrandThreads className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "https://www.threads.net/@leo_yassuda",
   },
-  {
-    title: "Components",
-    icon: (
-      <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
-    href: "#",
-  },
-  {
-    title: "Aceternity UI",
-    icon: (
-      <img
-        src="https://assets.aceternity.com/logo-dark.png"
-        width={20}
-        height={20}
-        alt="Aceternity Logo"
-      />
-    ),
-    href: "#",
-  },
-  {
-    title: "Changelog",
-    icon: (
-      <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
-    href: "#",
-  },
-
   {
     title: "Twitter",
     icon: (
       <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "https://www.twitter/leo_yassuda",
   },
   {
-    title: "GitHub",
+    title: "TikTok",
     icon: (
-      <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      <IconBrandTiktok className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "https://www.tiktok.com/@leo_yassuda",
   },
 ];
 
