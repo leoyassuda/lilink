@@ -15,7 +15,7 @@ type LinkPreviewProps = {
   className?: string;
   width?: number;
   height?: number;
-  quality?: number;
+  // quality?: number;
 } & (
   | { isStatic: true; imageSrc: string }
   | { isStatic?: false; imageSrc?: never }
@@ -27,7 +27,7 @@ export const LinkPreview: React.FC<LinkPreviewProps> = ({
   className,
   width = 200,
   height = 125,
-  quality = 50,
+  // quality = 50,
   isStatic = false,
   imageSrc = "",
 }) => {
