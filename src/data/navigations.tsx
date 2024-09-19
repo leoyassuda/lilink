@@ -12,7 +12,7 @@ const navLinks: { title: string; icon: React.ReactNode; href: string }[] = [
     icon: (
       <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "hhtps://www.instagram/leo_yassuda",
+    href: "https://www.instagram.com/leo_yassuda/",
   },
 
   {
@@ -27,7 +27,7 @@ const navLinks: { title: string; icon: React.ReactNode; href: string }[] = [
     icon: (
       <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "https://www.twitter/leo_yassuda",
+    href: "https://www.x.com/leo_yassuda",
   },
   {
     title: "TikTok",
